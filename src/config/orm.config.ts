@@ -8,6 +8,6 @@ export default async (configService: ConfigService): Promise<TypeOrmModuleOption
   database: configService.get<string>('DB_DATABASE'),
   username: configService.get<string>('DB_USERNAME'),
   password: configService.get<string>('DB_PASSWORD'),
-  entities: ['dist/**/*.entity.{ts, js}'],
-  synchronize: true,
+  entities: ['dist/**/*.entity.{ts,js}'],
+  synchronize: true
 });
